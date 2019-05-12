@@ -1,4 +1,4 @@
-﻿ui_menu_film_search_agents <- ui_user_command_class_noatom;
+ui_menu_film_search_agents <- ui_user_command_class_noatom;
 => nrel_main_idtf: [Поисковые агенты] (* <- lang_ru;; *);
 => nrel_main_idtf: [Search agents] (* <- lang_en;; *);
 <= nrel_ui_commands_decomposition:
