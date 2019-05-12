@@ -35,6 +35,7 @@ clone_project https://github.com/ShunkevichDV/sc-machine.git sc-machine scp_stab
 clone_project https://github.com/Ivan-Zhukau/sc-web.git sc-web master
 clone_project https://github.com/ShunkevichDV/ims.ostis.kb.git ims.ostis.kb master
 clone_project https://github.com/ICS-dev/ICS-knowledge-base.git kb/ICS-knowledge-base master
+clone_project https://github.com/ICS-dev/ui_components.git ui_components master
 
 stage "Prepare projects"
 
@@ -65,6 +66,10 @@ grunt build
 cd -
 echo -en $green"Copy server.conf"$rst"\n"
 cp -f ../config/server.conf ../sc-web/server/
+
+prepare "ui_components"
+cp ui_components/update_web.sh scripts/
+./update_web.sh
 
 stage "Build knowledge base"
 
