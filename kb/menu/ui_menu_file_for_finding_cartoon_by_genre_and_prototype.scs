@@ -1,0 +1,35 @@
+ui_menu_file_for_finding_cartoon_by_genre_and_prototype <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_finding_cartoon_by_genre_and_prototype 
+=> nrel_main_idtf: 
+	[Какие мультфильмы соответствуют указанному жанру и в которых использован указанный прототип?] 
+	(* <- lang_ru;; *);
+=> nrel_idtf: 
+	[Запрос всех мультфильмов указанного жанра и с указанным прототипом] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_cartoon_by_genre_and_prototype 
+=> nrel_main_idtf: 
+	[Which cartoons belong to given genre and have given prototype?] 
+	(* <- lang_en;; *);
+=> nrel_idtf: 
+	[Request of all cartoons which belong to given genre and have given prototype] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_finding_cartoon_by_genre_and_prototype => ui_nrel_command_template:
+	[*
+		action_of_finding_cartoon_by_genre_and_prototype _-> ._action_of_finding_cartoon_by_genre_and_prototype_instance
+			(*
+			_-> rrel_1:: ui_arg_1;;	
+			_-> rrel_2:: ui_arg_2;;			
+			*);;
+		._action_of_finding_cartoon_by_genre_and_prototype_instance _<- question;;
+	*];;
+
+ui_menu_file_for_finding_cartoon_by_genre_and_prototype => ui_nrel_command_lang_template: 
+	[Какие мультфильмы относятся к жанру $ui_arg_1 и в которых использован прототип $ui_arg_2?] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_cartoon_by_genre_and_prototype => ui_nrel_command_lang_template: 
+	[Request of all cartoons which belong to genre $ui_arg_1 and have given prototype $ui_arg_2?] 
+	(* <- lang_en;; *);;
