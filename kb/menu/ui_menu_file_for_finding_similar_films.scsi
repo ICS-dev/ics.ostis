@@ -1,0 +1,20 @@
+ui_menu_file_for_finding_similar_films
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Какие существуют подобные фильмы?] (* <- lang_ru;; *);
+		[What similar films are exist?] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_finding_similar_films _-> ._question_finding_similar_films_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._question_finding_similar_films_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос поиска похожих фильмов для: $ui_arg_1] 
+		(* <- lang_ru;; *);
+		[Request of finding similar films for: $ui_arg_1] 
+		(* <- lang_en;; *);;
+
