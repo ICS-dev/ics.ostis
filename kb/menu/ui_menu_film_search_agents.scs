@@ -18,8 +18,10 @@ ui_menu_film_search_agents <- ui_user_command_class_noatom;
 	ui_menu_find_film_awards;
 	ui_menu_find_film_by_director;
 	ui_menu_find_acter_of_type;
-	ui_menu_find_films_of_type
-	
+	ui_menu_find_films_of_type;
+	ui_menu_file_for_finding_video_sequences_by_rating_and_country;
+	ui_menu_find_films_by_sound_engineer;
+	ui_menu_file_for_finding_film_by_sound_engineer_and_year	
 
 };
 
