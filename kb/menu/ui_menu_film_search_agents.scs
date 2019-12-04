@@ -9,7 +9,7 @@ ui_menu_film_search_agents <- ui_user_command_class_noatom;
 	ui_menu_file_for_finding_cinocompanies_by_year_and_country;
 	ui_menu_file_for_finding_film_by_producer_and_year;
 	ui_menu_file_for_finding_series_by_company_and_year;
-        ui_menu_find_film_by_composer;
+  ui_menu_find_film_by_composer;
 	ui_menu_find_series_by_screenwriter;
 	ui_menu_file_for_finding_video_sequences_by_age_limit_and_country;
 	ui_menu_file_for_finding_films_by_actor_and_production_year;
@@ -21,8 +21,18 @@ ui_menu_film_search_agents <- ui_user_command_class_noatom;
 	ui_menu_find_films_of_type;
 	ui_menu_file_for_finding_video_sequences_by_rating_and_country;
 	ui_menu_find_films_by_sound_engineer;
-	ui_menu_file_for_finding_film_by_sound_engineer_and_year	
-
+	ui_menu_file_for_finding_film_by_sound_engineer_and_year;
+	ui_menu_file_for_finding_similar_films;
+	ui_menu_file_for_finding_film_by_rating;
+	ui_menu_file_for_finding_cartoon_by_genre_and_producer;
+	ui_menu_file_for_finding_series_by_actor_and_production_year;
+	ui_menu_file_for_finding_series_by_country_and_age_limit;
+	ui_menu_file_for_finding_anime_by_metagenre_and_year;
+	ui_menu_file_for_finding_anime_by_status_and_original;
+	ui_menu_file_for_finding_cartoon_by_genre_and_prototype;
+	ui_menu_file_for_finding_cartoons_by_country_and_age_limit;
+	ui_menu_file_for_finding_films_by_producer_and_age_limit;
+	ui_menu_file_for_finding_film_by_country_and_year
 };
 
 <- rrel_key_sc_element:

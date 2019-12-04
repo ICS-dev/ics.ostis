@@ -1,0 +1,35 @@
+ui_menu_file_for_finding_anime_by_metagenre_and_year <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_finding_anime_by_metagenre_and_year 
+=> nrel_main_idtf: 
+	[Какие аниме определенного метажанра выпущены в определенном году?] 
+	(* <- lang_ru;; *);
+=> nrel_idtf: 
+	[Запрос всех аниме указанного метажанра и указанного года.] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_anime_by_metagenre_and_year 
+=> nrel_main_idtf: 
+	[What anime are released by a certain metagenre and in a particular year?] 
+	(* <- lang_en;; *);
+=> nrel_idtf: 
+	[Request all anime of the specified metagenre and with the specified year.] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_finding_anime_by_metagenre_and_year => ui_nrel_command_template:
+	[*
+		action_of_finding_anime_by_metagenre_and_year _-> ._action_of_finding_anime_by_metagenre_and_year_instance
+			(*
+			_-> rrel_1:: ui_arg_1;;	
+			_-> rrel_2:: ui_arg_2;;			
+			*);;
+		._action_of_finding_anime_by_metagenre_and_year_instance _<- question;;
+	*];;
+
+ui_menu_file_for_finding_anime_by_metagenre_and_year => ui_nrel_command_lang_template: 
+	[Какие аниме метажанра $ui_arg_1 выпущены в $ui_arg_2 году?] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_anime_by_metagenre_and_year => ui_nrel_command_lang_template: 
+	[What anime are released by the $ui_arg_1 metagenre and released in $ui_arg_2?] 
+	(* <- lang_en;; *);;
